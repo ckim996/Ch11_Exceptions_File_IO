@@ -12,11 +12,15 @@ public class OpenFile2
         fileName = sc.nextLine();
 
         Scanner inputFile = openFile(fileName);
-        while(inputFile == null)
+        //System.out.println(inputFile);
+
+        if(inputFile == null)
         {
             System.out.print("File does not exist. Enter the file name: ");
+            fileName = sc.nextLine();
             inputFile = openFile(fileName);
         }
+
     }
 
     public static Scanner openFile(String fileN)
