@@ -6,7 +6,7 @@ public class NameToFile
     {
         String name = "Ericka";
         System.out.println("Storing the name " + name);
-        FileOutputStream fstream = new FileOutputStream("src/" + "name.dat");
+        FileOutputStream fstream = new FileOutputStream("src/" + "name.dat",true);
         DataOutputStream outputFile = new DataOutputStream(fstream);
 
         System.out.println("Writing the name to the file");
