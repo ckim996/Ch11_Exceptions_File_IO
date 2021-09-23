@@ -1,4 +1,6 @@
-public class TestScores
+import java.io.Serializable;
+
+public class TestScores implements Serializable
 {
     private double[] scores;
 
