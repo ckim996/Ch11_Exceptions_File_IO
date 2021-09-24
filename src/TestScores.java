@@ -3,7 +3,6 @@ import java.io.Serializable;
 public class TestScores implements Serializable
 {
     private double[] scores;
-
     public TestScores(double[] s) throws InvalidTestScore {
         /*
         for(int i = 0; i < s.length; i++)
@@ -24,6 +23,11 @@ public class TestScores implements Serializable
         scores = s;
     }
 
+    public double[] getScores()
+    {
+        return scores;
+    }
+
     public double average(double[] s)
     {
         double sum = 0;
@@ -37,6 +41,5 @@ public class TestScores implements Serializable
 
         return avg;
     }
-
 
 }
